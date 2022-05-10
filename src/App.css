@@ -47,3 +47,33 @@
   font-size: 32px;
   font-family: 'Gill Sans';
 }
+
+.history{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items{
+  border: 1px solid rgb(207, 114, 184);
+  width: 250px;
+  margin: 4px;
+  color: #fff;
+}
+
+.black-button{
+  background-color: rgb(21, 24, 23);
+  border: none;
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 15px;
+}
+.clear-button{
+  color: #fff;
+  background-color: aquamarine;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+}

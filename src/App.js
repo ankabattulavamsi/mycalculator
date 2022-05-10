@@ -1,19 +1,19 @@
-import { Typography } from '@mui/material'
-import React, { useState } from 'react'
-import Buttons from './components/Buttons'
-import Form from './components/Form'
+import Calculator from './components/Calculator'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css'
+import History from './components/History'
 
 const App = () => {
-  const [input, setInput] = useState('')
+  
   return (
     <div className='bg'>
-    <center >
-      <Typography>Calculator Application</Typography>
-      <div>
-      <Form input={input} setInput={setInput} />
-      <Buttons input={input} setInput={setInput} />
-      </div>
+   <center >
+     <BrowserRouter>
+     <Routes>
+       <Route exact path='/' element={<Calculator />} />
+       <Route exact path='/history' element={<History />} />
+     </Routes>
+     </BrowserRouter>
     </center>
     </div>
   )
