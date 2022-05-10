@@ -19,7 +19,7 @@ const History = ({calHistory}) => {
   let historyResult = JSON.parse(localStorage.getItem("calHistory"))
   return (
     <div>
-      {historyResult && !clearHistory ? historyResult.map(item => <li className='history' key={item.id}><p className='items'>{item}</p></li>) : <p>No History</p> }
+      {historyResult && !clearHistory ? historyResult.map(item => <li className='history' key={item.id}><p className='items'>{item}</p></li>) : <p className='caption'>No History Here... </p> }
       <button onClick={onClickClearHistory} className="cl-button">Clear History</button>
       <button onClick={onClickHandle} className="black-button">Back</button>
     </div>
